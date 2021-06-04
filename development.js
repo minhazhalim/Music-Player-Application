@@ -21,7 +21,7 @@ function loadMusic(indexNumb){
   musicName.innerText = allMusic[indexNumb - 1].name;
   musicArtist.innerText = allMusic[indexNumb - 1].artist;
   musicImage.src = `images/${allMusic[indexNumb - 1].src}.jpg`;
-  mainAudio.src = `songs/${allMusic[indexNumb - 1].src}.mp3`;
+  mainAudio.src = `musics/${allMusic[indexNumb - 1].src}.mp3`;
 }
 function playMusic(){
   wrapper.classList.add("paused");
