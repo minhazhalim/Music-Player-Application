@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+     <title>Music Player Application</title>
+     <link rel="stylesheet" href="designing.css">
+     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css' integrity='sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==' crossorigin='anonymous'/>
+     <script src="software.js" defer></script>
+</head>
+<body>
+     <nav>
+          <ul>
+               <li class="brand"><img src="./images/logo.png" alt="Spotify Clone Logo">spotify</li>
+               <li>home</li>
+               <li>about</li>
+          </ul>
+     </nav>
+     <div class="container">
+          <div class="songList">
+               <h1>best of ncs - no copyright sounds</h1>
+               <div class="songItemContainer">
+                    <div class="songItem">
+                         <img src="" alt="1">
+                         <span class="songName">warriyo - mortals [NCS release]</span>
+                         <span class="songListPlay">
+                              <span class="timestamp">05:34 <i class="far fa-play-circle songItemPlay"></i></span>
+                         </span>
+                    </div>
+                    <div class="songItem">
+                         <img src="" alt="2">
+                         <span class="songName">cielo - huma-huma</span>
+                         <span class="songListPlay">
+                              <span class="timestamp">05:34 <i class="far fa-play-circle songItemPlay"></i></span>
+                         </span>
+                    </div>
+                    <div class="songItem">
+                         <img src="" alt="3">
+                         <span class="songName">deaf kev - invincible [NCS release]</span>
+                         <span class="songListPlay">
+                              <span class="timestamp">05:34 <i class="far fa-play-circle songItemPlay"></i></span>
+                         </span>
+                    </div>
+                    <div class="songItem">
+                         <img src="" alt="4">
+                         <span class="songName">different heaven & eh!de - my heart [NCS release]</span>
+                         <span class="songListPlay">
+                              <span class="timestamp">05:34 <i class="far fa-play-circle songItemPlay"></i></span>
+                         </span>
+                    </div>
+                    <div class="songItem">
+                         <img src="" alt="5">
+                         <span class="songName">janji-heroes-tonight-feat-johnning [NCS release]</span>
+                         <span class="songListPlay">
+                              <span class="timestamp">05:34 <i class="far fa-play-circle songItemPlay"></i></span>
+                         </span>
+                    </div>
+                    <div class="songItem">
+                         <img src="" alt="6">
+                         <span class="songName">rabba - salam-e-ishq</span>
+                         <span class="songListPlay">
+                              <span class="timestamp">05:34 <i class="far fa-play-circle songItemPlay"></i></span>
+                         </span>
+                    </div>
+                    <div class="songItem">
+                         <img src="" alt="7">
+                         <span class="songName">sakhiyaan - salam-e-ishq</span>
+                         <span class="songListPlay">
+                              <span class="timestamp">05:34 <i class="far fa-play-circle songItemPlay"></i></span>
+                         </span>
+                    </div>
+                    <div class="songItem">
+                         <img src="" alt="8">
+                         <span class="songName">bhula dena - salam-e-ishq</span>
+                         <span class="songListPlay">
+                              <span class="timestamp">05:34 <i class="far fa-play-circle songItemPlay"></i></span>
+                         </span>
+                    </div>
+                    <div class="songItem">
+                         <img src="" alt="9">
+                         <span class="songName">tumhari kasam - salam-e-ishq</span>
+                         <span class="songListPlay">
+                              <span class="timestamp">05:34 <i class="far fa-play-circle songItemPlay"></i></span>
+                         </span>
+                    </div>
+                    <div class="songItem">
+                         <img src="" alt="10">
+                         <span class="songName">na jaana - salam-e-ishq</span>
+                         <span class="songListPlay">
+                              <span class="timestamp">05:34 <i class="far fa-play-circle songItemPlay"></i></span>
+                         </span>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <div class="bottom">
+          <input type="range" id="myProgressBar" name="range" min="0" max="100" value="0">
+          <div class="icons">
+               <i class="fas fa-3x fa-step-backward" id="previous"></i>
+               <i class="fas fa-3x fa-play-circle" id="masterPlay"></i>
+               <i class="fas fa-3x fa-step-forward" id="next"></i>
+          </div>
+          <div class="songInfo">
+               <img src="./images/playing.gif" alt="Playing Dashboard" id="gif"><span id="masterSongName">warrior - mortals [ncs release]</span>
+          </div>
+     </div>
+</body>
+</html>
