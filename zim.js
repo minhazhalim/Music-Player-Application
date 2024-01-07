@@ -67,7 +67,7 @@ async function displayAlbums(){
           const element = array[index];
           if(element.href.includes('./song') && !element.href.includes('.htaccess')){
                let folder = element.href.split('/').slice(-2)[0];
-               let path = await fetch(`./songs/${folder}/info.json`);
+               let path = await fetch(`./song/${folder}/info.json`);
                let response = await path.json();
                cardContainer.innerHTML = cardContainer.innerHTML + `
                     <div data-folder="${folder}" class="card">
@@ -76,7 +76,7 @@ async function displayAlbums(){
                                    <path d="M5 20V4L19 12L5 20Z" stroke="#141B34" fill="#000" stroke-width="1.5" stroke-linejoin="round"/>
                               </svg>
                          </div>
-                         <img src="./songs/${folder}/cover.jpg" alt="Cover Icon">
+                         <img src="./song/${folder}/cover.jpg" alt="Cover Icon">
                          <h2>${response.title}</h2>
                          <p>${response.description}</p>
                     </div>
